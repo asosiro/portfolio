@@ -1,0 +1,25 @@
+//サイドバナー
+
+/*!-- サイドバナー --*/
+
+.sidebar {
+    @media (min-width: 769px){
+    width: 30%;
+    padding-left: 9rem;
+    box-sizing: border-box;
+    }
+}
+
+.side-banner {
+    padding: 0;
+    margin: 0 ;
+    list-style-type: none;
+}
+
+.side-banner li {
+    margin-bottom :2rem;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+

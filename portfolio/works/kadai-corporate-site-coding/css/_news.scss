@@ -1,0 +1,60 @@
+// ニュースのスタイル
+
+/*!-- ニュース --*/
+
+.news {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: $white;
+    @media (min-width: 769px){
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+
+}
+
+.news-list {
+    padding: 0 2rem;
+    margin: 0 auto 2rem;
+    list-style: none;
+    @media (min-width: 769px){
+        max-width: 80rem;
+    }
+
+    li {
+        padding: 2rem 0;
+        margin-bottom: 0;
+        border-bottom: 1px $gray2 solid;
+        &:first-child {
+            border-top: 1px $gray2 solid;
+        }
+    }
+}
+
+.news-list-date {
+    display: block;
+    color: $gray1;
+    @media (min-width: 769px){
+         display: inline-block;
+         margin-right: 4rem;
+    }
+
+}
+
+.news-footer {
+    text-align: center;
+}
+
+.button-news {
+    padding: 1.2rem 5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: $black;
+    background-color: $white;
+    border: 1px solid $gray2;
+    border-radius: .4rem;
+    @media (min-width: 769px){
+        font-size: 1.6rem;
+    }
+
+}
