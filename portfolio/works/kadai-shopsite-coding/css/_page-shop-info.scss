@@ -1,0 +1,131 @@
+/*! 下部ページのショップ情報セクション */
+
+.page-shop-info{
+    padding: 5rem 2rem;
+    @media (min-width: 769px) { 
+        padding: 4rem 0 5rem;
+    }
+
+}
+
+.page-section-title {
+    margin: 0;
+    font:{
+        family: "Roboto Condensed";
+        size: 2rem;
+        weight: 700
+    };
+    @media (min-width: 769px) { 
+        font-size: 2.4rem;
+        margin-right: 1.8rem;
+    }
+}
+
+
+
+
+.page-footer-info {
+    padding: 0 3.6rem;
+    margin: 0 ;
+    font-size : 1.4rem;
+      @media (min-width: 769px) { 
+          font-size : 1.6rem;
+          padding: 0 0 3rem 0; //変更
+      }
+}
+
+.page-info-list {
+    display: flex;
+    list-style: none;
+    padding: 0.7rem;
+    margin: 0;
+    justify-content: space-between;
+    @media (min-width: 769px){
+        padding: 1rem 0
+    }
+    li {
+        padding: 0.7rem;
+        @media (min-width: 769px){
+            padding: 1rem 0;
+        }
+    color: $sub1;
+    &:last-child {
+            margin-right: 0;
+        }
+        }
+
+}
+
+.page-info-list-item {
+    color: $sub1;
+    padding:0;
+    
+    @media (min-width: 769px){
+        margin-right: 2rem;
+    }
+
+}
+
+.page-footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.6rem;
+    @media (min-width: 769px) {
+        flex-direction: column;
+        padding: 0;
+    }
+
+}
+
+.page-footer-address {
+    margin-bottom: 1.6rem;
+    font-size : 1.4rem;
+    font-style: normal;
+    text-align: left;
+    color :$sub1;
+    p {
+        margin: 0;
+    }
+    @media (min-width: 769px){
+        margin-bottom: 3rem;
+    }
+}
+
+.page-footer-sns {
+    display: flex;
+    padding: 0;
+    margin: 0 0 2rem;
+    list-style: none;
+    font-size: 1.2rem;
+     @media (min-width: 769px) { 
+        margin: 0;
+      }
+
+
+    li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.4rem;
+        height: 2.4rem;
+        margin-right: 1.2rem;
+        background-color: $accent1;
+        border-radius: 50%;
+            &:last-child {
+                    margin-right: 0;
+                }
+            @media (min-width: 769px) {
+                width: 3.6rem;
+                height: 3.6rem;
+            }
+        }
+    
+    a {
+        color: $base;
+    }
+    
+    @media (min-width: 769px) {
+        font-size: 2rem;
+    }
+
+}

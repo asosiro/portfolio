@@ -1,0 +1,41 @@
+/*!-- スライドショー --*/
+
+.page-menu-body .slideshow {
+      @media (min-width: 769px) { 
+        width: 100%; 
+        img{
+          width: 100%;
+        }
+    }
+}
+
+.menu-body .slideshow {
+      @media (min-width: 769px) { 
+        width: calc((100% - 20px) / 2);
+    }
+}
+
+.thumbnail {
+  display: flex;
+  padding: 2rem 1rem;
+  list-style: none;
+  margin: 0;
+  @media (min-width: 769px){
+    padding: 2rem 0;
+  }
+}
+
+.thumbnail li {
+  width: calc(100% / 4);
+  cursor: pointer;
+  padding: 0 1rem;
+      @media (min-width: 769px) { 
+        padding: 2rem 2rem 0 0;
+    }
+}
+
+.thumbnail li:last-child {
+  @media (min-width: 769px) { 
+    padding: 2rem 0 0 0;
+  }
+}
