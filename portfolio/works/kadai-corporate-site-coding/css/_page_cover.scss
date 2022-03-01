@@ -1,0 +1,31 @@
+// 各ページのカバー
+
+/*!-- Serviceページのカバー　--*/
+
+.page-cover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10.6rem;
+    padding-top: 6rem;
+    color: #fff;
+    @media (min-width: 769px){
+        height: 13.3rem;
+    }
+    background: {
+        image: url("../images/cover.jpg");
+        size: cover;
+        position: center;
+    };
+} 
+
+.page-cover-title {
+    margin: 0;
+    font: {
+        size: 3.2rem;
+        weight: 700;
+    };
+    @media (min-width: 769px){
+        font-size: 5rem;
+    }
+}
