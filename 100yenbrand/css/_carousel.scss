@@ -1,0 +1,7 @@
+/*!--ヘッダー--*/
+
+.carousel_cover {
+    @media #{$pc} {
+        display:none;
+    }
+}

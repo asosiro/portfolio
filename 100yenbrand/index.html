@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hundreds</title>
+        <meta name="description" content="Useful Goods in 100yen">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/style.css">
+
+        <!--Carousel -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+        <!-- FontAwesome -->
+        <script src="https://kit.fontawesome.com/9838b35f6f.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <header class="header fade_in">    <!--ヘッダー-->
+            <!--ロゴ-->
+            <div class="logo">
+                <a href="#">
+                    <picture>
+                      <source media="(min-width:769px)" srcset="./image/index/logo.png">
+                      <img src="./image/index/logo_sp.png" alt="logo">
+                    </picture>
+                </a>
+                <h1>HUNDREDS.inc</h1>
+            </div>
+            <!--ハンバーガーメニュー-->
+            <div class="menu">
+                <div id="nav-button" class="nav-button"> <i class="fas fa-bars" aria-label="menu"></i></div>
+            </div>
+            <!-- SP ナビゲーション -->
+            <nav class ="sp-nav">
+                <div class="sp-nav-box">
+                    <ul class="sp-nav-list">
+                        <li><a href="#">LINE UP<br>(ダミー)</a></li>
+                        <li><a href="./company.html">COMPANY</a></li>
+                    </ul>
+                    <ul class="snsaccount">
+                        <li class="mail"><a href="mailto:xxx@techacademy.jp"><i class="far fa-envelope" aria-label="お問い合わせ"></i></a></li>
+                        <li class="twitter"><a href="#"><i class="fab fa-twitter" aria-label="Twitter"></i></a></li>
+                        <li class="instagram"><a href="#"><i class="fab fa-instagram" aria-label="Instagram"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- PC ナビゲーション -->
+            <nav class ="pc-nav">
+                <div class="pc-navbox">
+                    <ul class="pc-nav-list">
+                        <li><a href="#">LINE UP（ダミー）</a></li>
+                        <li><a href="./company.html">COMPANY</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- カルーセル -->
+        <div class="carousel_cover">
+            <div class="carousel">
+                <div>
+                    <img src = "./image/index/pen_sp.jpg" alt="picture1">
+                    <div class="overlay">
+                        <div class="window">
+                            <label class="close" for="overlay">×</label>                            
+                            <div class="pop-up-img">
+                                <img src ="./image/index/pen_popup.jpg" alt="pen">
+                            </div>
+                                <div class="pop-up-des">
+                                    <h3>Pen</h3>
+                                    <p>※いずれの商品をクリックしてもペンが表示されます。</p>
+                                </div>
+                                <div class="pop-upamount">
+                                    <ul>
+                                        <li><label for="itemamount">数量</label></li>
+                                        <li><select name="amount" class="itemamount"></li>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </ul>
+                                    <button>カートに入れる</button>
+                                </div>
+                                <div class="shipping">
+                                    <h3>Shipping Policy</h3>
+                                    <ol>
+                                        <li>All orders are processed within 2-3 business days. Orders are not shipped or delivered on weekends or holidays.</li>
+                                        <li>If we are experiencing a high volume of orders, shipments may be delayed by a few days. .</li>
+                                    </ol>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div><img src = "./image/index/makeup_sp.jpg" alt="picture2"></div>
+                <div><img src = "./image/index/stapler_sp.jpg" alt="picture3"></div>
+            </div>
+        </div>
+        <!-- メイン -->
+        <main>
+            <section class="item">
+                <div class="item-box">
+                    <div class="itemimg">
+                        <picture>
+                            <source media="(min-width:769px)" srcset="./image//index/inkpad.jpg">
+                            <img src="./image/index/inkpad_sp.jpg" alt="inkpad">
+                        </picture>
+                    </div>
+                    <div class="itemname">
+                        <p>inkpad</p>
+                    </div>
+                    <div class="overlay">
+                        <div class="window">
+                            <label class="close" for="overlay">×</label>                            
+                            <div class="pop-up-img">
+                                <img src ="./image/index/pen_popup.jpg" alt="pen">
+                            </div>
+                                <div class="pop-up-des">
+                                    <h3>Pen</h3>
+                                    <p>※いずれの商品をクリックしてもペンが表示されます。</p>
+                                </div>
+                                <div class="pop-upamount">
+                                    <ul>
+                                        <li><label for="itemamount">数量</label></li>
+                                        <li><select name="amount" class="itemamount"></li>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </ul>
+                                    <button>カートに入れる</button>
+                                </div>
+                                <div class="shipping">
+                                    <h3>Shipping Policy</h3>
+                                    <ol>
+                                        <li>All orders are processed within 2-3 business days. Orders are not shipped or delivered on weekends or holidays.</li>
+                                        <li>If we are experiencing a high volume of orders, shipments may be delayed by a few days. .</li>
+                                    </ol>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-box">
+                    <div class="itemimg">
+                        <picture>
+                            <source media="(min-width:769px)" srcset="./image//index/color_pencil.jpg">
+                            <img src="./image/index/color_pencil_sp.jpg" alt="color pencil">
+                        </picture>
+                    </div>
+                    <div class="itemname">
+                        <p>color pencil</p>
+                    </div>
+                    <div class="overlay">
+                        <div class="window">
+                            <label class="close" for="overlay">×</label>                            
+                            <div class="pop-up-img">
+                                <img src ="./image/index/pen_popup.jpg" alt="pen">
+                            </div>
+                                <div class="pop-up-des">
+                                    <h3>Pen</h3>
+                                    <p>※いずれの商品をクリックしてもペンが表示されます。</p>
+                                </div>
+                                <div class="pop-upamount">
+                                    <ul>
+                                        <li><label for="itemamount">数量</label></li>
+                                        <li><select name="amount" class="itemamount"></li>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </ul>
+                                    <button>カートに入れる</button>
+                                </div>
+                                <div class="shipping">
+                                    <h3>Shipping Policy</h3>
+                                    <ol>
+                                        <li>All orders are processed within 2-3 business days. Orders are not shipped or delivered on weekends or holidays.</li>
+                                        <li>If we are experiencing a high volume of orders, shipments may be delayed by a few days. .</li>
+                                    </ol>
+                                </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item-box">
+                    <div class="itemimg">
+                        <img src="./image/index/nipper.jpg" alt="nipper">
+                    </div>
+                    <div class="itemname">
+                        <p>nipper</p>
+                    </div>
+                    <div class="overlay">
+                        <div class="window">
+                            <label class="close" for="overlay">×</label>                            
+                            <div class="pop-up-img">
+                                <img src ="./image/index/pen_popup.jpg" alt="pen">
+                            </div>
+                                <div class="pop-up-des">
+                                    <h3>Pen</h3>
+                                    <p>※いずれの商品をクリックしてもペンが表示されます。</p>
+                                </div>
+                                <div class="pop-upamount">
+                                    <ul>
+                                        <li><label for="itemamount">数量</label></li>
+                                        <li><select name="amount" class="itemamount"></li>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </ul>
+                                    <button>カートに入れる</button>
+                                </div>
+                                <div class="shipping">
+                                    <h3>Shipping Policy</h3>
+                                    <ol>
+                                        <li>All orders are processed within 2-3 business days. Orders are not shipped or delivered on weekends or holidays.</li>
+                                        <li>If we are experiencing a high volume of orders, shipments may be delayed by a few days. .</li>
+                                    </ol>
+                                </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item-box">
+                    <div class="itemimg">
+                        <img src="./image/index/glue.jpg" alt="glue">
+                    </div>
+                    <div class="itemname">
+                        <p>glue</p>
+                    </div>
+                    <div class="overlay">
+                        <div class="window">
+                            <label class="close" for="overlay">×</label>                            
+                            <div class="pop-up-img">
+                                <img src ="./image/index/pen_popup.jpg" alt="pen">
+                            </div>
+                                <div class="pop-up-des">
+                                    <h3>Pen</h3>
+                                    <p>※いずれの商品をクリックしてもペンが表示されます。</p>
+                                </div>
+                                <div class="pop-upamount">
+                                    <ul>
+                                        <li><label for="itemamount">数量</label></li>
+                                        <li><select name="amount" class="itemamount"></li>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </ul>
+                                    <button>カートに入れる</button>
+                                </div>
+                                <div class="shipping">
+                                    <h3>Shipping Policy</h3>
+                                    <ol>
+                                        <li>All orders are processed within 2-3 business days. Orders are not shipped or delivered on weekends or holidays.</li>
+                                        <li>If we are experiencing a high volume of orders, shipments may be delayed by a few days. .</li>
+                                    </ol>
+                                </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item-box">
+                    <div class="itemimg">
+                        <img src="./image/index/cup.jpg" alt="cup">
+                    </div>
+                    <div class="itemname">
+                        <p>cup</p>
+                    </div>
+                    <div class="overlay">
+                        <div class="window">
+                            <label class="close" for="overlay">×</label>                            
+                            <div class="pop-up-img">
+                                <img src ="./image/index/pen_popup.jpg" alt="pen">
+                            </div>
+                                <div class="pop-up-des">
+                                    <h3>Pen</h3>
+                                    <p>※いずれの商品をクリックしてもペンが表示されます。</p>
+                                </div>
+                                <div class="pop-upamount">
+                                    <ul>
+                                        <li><label for="itemamount">数量</label></li>
+                                        <li><select name="amount" class="itemamount"></li>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </ul>
+                                    <button>カートに入れる</button>
+                                </div>
+                                <div class="shipping">
+                                    <h3>Shipping Policy</h3>
+                                    <ol>
+                                        <li>All orders are processed within 2-3 business days. Orders are not shipped or delivered on weekends or holidays.</li>
+                                        <li>If we are experiencing a high volume of orders, shipments may be delayed by a few days. .</li>
+                                    </ol>
+                                </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item-box">
+                    <div class="itemimg">
+                        <picture>
+                            <source media="(min-width:769px)" srcset="./image//index/toys.jpg">
+                            <img src="./image/index/toys_sp.jpg" alt="toys">
+                        </picture>
+                    </div>
+                    <div class="itemname">
+                        <p>toys</p>
+                    </div>
+                    <div class="overlay">
+                        <div class="window">
+                            <label class="close" for="overlay">×</label>                            
+                            <div class="pop-up-img">
+                                <img src ="./image/index/pen_popup.jpg" alt="pen">
+                            </div>
+                                <div class="pop-up-des">
+                                    <h3>Pen</h3>
+                                    <p>※いずれの商品をクリックしてもペンが表示されます。</p>
+                                </div>
+                                <div class="pop-upamount">
+                                    <ul>
+                                        <li><label for="itemamount">数量</label></li>
+                                        <li><select name="amount" class="itemamount"></li>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </ul>
+                                    <button>カートに入れる</button>
+                                </div>
+                                <div class="shipping">
+                                    <h3>Shipping Policy</h3>
+                                    <ol>
+                                        <li>All orders are processed within 2-3 business days. Orders are not shipped or delivered on weekends or holidays.</li>
+                                        <li>If we are experiencing a high volume of orders, shipments may be delayed by a few days. .</li>
+                                    </ol>
+                                </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item-box forpcimg">
+                    <div class="itemimg">
+                        <img src = "./image/index/pen.jpg" alt="pen">                    </div>
+                    <div class="itemname">
+                        <p>pen</p>
+                    </div>
+                    <div class="overlay">
+                        <div class="window">
+                            <label class="close" for="overlay">×</label>                            
+                            <div class="pop-up-img">
+                                <img src ="./image/index/pen_popup.jpg" alt="pen">
+                            </div>
+                                <div class="pop-up-des">
+                                    <h3>Pen</h3>
+                                    <p>※いずれの商品をクリックしてもペンが表示されます。</p>
+                                </div>
+                                <div class="pop-upamount">
+                                    <ul>
+                                        <li><label for="itemamount">数量</label></li>
+                                        <li><select name="amount" class="itemamount"></li>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </ul>
+                                    <button>カートに入れる</button>
+                                </div>
+                                <div class="shipping">
+                                    <h3>Shipping Policy</h3>
+                                    <ol>
+                                        <li>All orders are processed within 2-3 business days. Orders are not shipped or delivered on weekends or holidays.</li>
+                                        <li>If we are experiencing a high volume of orders, shipments may be delayed by a few days. .</li>
+                                    </ol>
+                                </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item-box forpcimg">
+                    <div class="itemimg">
+                        <div><img src = "./image/index/makeup.jpg" alt="makeup"></div>
+                    </div>
+                    <div class="itemname">
+                        <p>makeup</p>
+                    </div>
+                    <div class="overlay">
+                        <div class="window">
+                            <label class="close" for="overlay">×</label>                            
+                            <div class="pop-up-img">
+                                <img src ="./image/index/pen_popup.jpg" alt="pen">
+                            </div>
+                                <div class="pop-up-des">
+                                    <h3>Pen</h3>
+                                    <p>※いずれの商品をクリックしてもペンが表示されます。</p>
+                                </div>
+                                <div class="pop-upamount">
+                                    <ul>
+                                        <li><label for="itemamount">数量</label></li>
+                                        <li><select name="amount" class="itemamount"></li>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </ul>
+                                    <button>カートに入れる</button>
+                                </div>
+                                <div class="shipping">
+                                    <h3>Shipping Policy</h3>
+                                    <ol>
+                                        <li>All orders are processed within 2-3 business days. Orders are not shipped or delivered on weekends or holidays.</li>
+                                        <li>If we are experiencing a high volume of orders, shipments may be delayed by a few days. .</li>
+                                    </ol>
+                                </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item-box forpcimg">
+                    <div class="itemimg">
+                        <div><img src = "./image/index/stapler.jpg" alt="stapler"></div>
+                    </div>
+                    <div class="itemname">
+                        <p>stapler</p>
+                    </div>
+                    <div class="overlay">
+                        <div class="window">
+                            <label class="close" for="overlay">×</label>                            
+                            <div class="pop-up-img">
+                                <img src ="./image/index/pen_popup.jpg" alt="pen">
+                            </div>
+                                <div class="pop-up-des">
+                                    <h3>Pen</h3>
+                                    <p>※いずれの商品をクリックしてもペンが表示されます。</p>
+                                </div>
+                                <div class="pop-upamount">
+                                    <ul>
+                                        <li><label for="itemamount">数量</label></li>
+                                        <li><select name="amount" class="itemamount"></li>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </ul>
+                                    <button>カートに入れる</button>
+                                </div>
+                                <div class="shipping">
+                                    <h3>Shipping Policy</h3>
+                                    <ol>
+                                        <li>All orders are processed within 2-3 business days. Orders are not shipped or delivered on weekends or holidays.</li>
+                                        <li>If we are experiencing a high volume of orders, shipments may be delayed by a few days. .</li>
+                                    </ol>
+                                </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </section>
+            <div class="more">
+                <a href="#" class="formore">
+                    <p>MORE <i class="fa fa-chevron-right" aria-label="arrow"></i></p>
+                </a>
+            </div>
+
+            <section class="company">
+                <div class="comtitle">
+                    <h2>COMPANY</h2>
+                </div>
+                <div class="comcontent">
+                    <div class="comimg">
+                        <img src="./image/index/company.jpg" alt="company image">
+                    </div>
+                    <div class="comdisbox">
+                        <div class="comdis">
+                            <h3>Hundreds.inc</h3>
+                            <address><span>〒000-0000</span> dummytext dummtext dummytext</address>
+                            <p>Open from 10:00am ~ 7:00pm</p>
+                            <ul class="snsaccount">
+                                <li class="mail"><a href="mailto:xxx@techacademy.jp"><i class="far fa-envelope" aria-label="お問い合わせ"></i></a></li>
+                                <li class="twitter"><a href="#"><i class="fab fa-twitter" aria-label="Twitter"></i></a></li>
+                                <li class="instagram"><a href="#"><i class="fab fa-instagram" aria-label="Instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="more">
+                <a href="./company.html" class="formore">
+                    <p>MORE <i class="fa fa-chevron-right" aria-label="arrow"></i></p>
+                </a>
+            </div>
+        </main>
+        <footer>
+            <small>©Dai Awata All Rights Reserved</small>
+        </footer>
+        
+
+        <!-- JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="./js/hamburger.js"></script>
+        <script src="./js/carousel.js"></script>
+        <script src="./js/bpopup.js"></script>
+        <script src="./js/fade_in.js"></script>
+    </body>
+</html>

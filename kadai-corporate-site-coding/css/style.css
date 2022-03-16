@@ -1,0 +1,592 @@
+@charset "UTF-8";
+/* 文字コードの指定 */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Noto Sans JP' , sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #333;
+  background-color: #f7f7f1;
+}
+
+@media (min-width: 769px) {
+  body {
+    font-size: 1.6rem;
+  }
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+/*! --ヘッダー--*/
+.header {
+  position: fixed;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 100;
+  width: 100%;
+  height: 6rem;
+  padding: 0 0 0 2rem;
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (min-width: 769px) {
+  .header {
+    padding: 0 3rem 0 1rem;
+  }
+}
+
+/*! --ハンバーガーメニュー*/
+.nav-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 6rem;
+  height: 6rem;
+  font-size: 3.1rem;
+  color: #333;
+  cursor: pointer;
+}
+
+@media (min-width: 769px) {
+  .nav-button {
+    display: none;
+  }
+}
+
+/*! --SPナビゲーション--*/
+.sp-nav {
+  position: absolute;
+  top: 6rem;
+  left: 0;
+  display: none;
+  z-index: 1000;
+  width: 100%;
+  padding: 4rem;
+  font-size: 2.4rem;
+  text-align: center;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.sp-nav-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sp-nav-list li {
+  margin-bottom: 4rem;
+}
+
+/*! --PC ナビゲーション--*/
+.pc-nav {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .pc-nav {
+    display: block;
+  }
+}
+
+.pc-nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.pc-nav-list li {
+  margin: 0 0 0 5rem;
+}
+
+/*!-- トップページカバー --*/
+.cover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 30rem;
+  padding-top: 6rem;
+  color: #fff;
+  background-image: url("../images/cover.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 769px) {
+  .cover {
+    height: 50rem;
+  }
+}
+
+.cover-title {
+  margin: 0;
+  font-size: 4.8rem;
+  font-weight: 700;
+}
+
+@media (min-width: 769px) {
+  .cover-title {
+    font-size: 7.2rem;
+  }
+}
+
+.cover-discription {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+@media (min-width: 769px) {
+  .cover-discription {
+    font-size: 2rem;
+  }
+}
+
+/*!-- サービス --*/
+.service {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 769px) {
+  .service {
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.service-item {
+  margin-bottom: 2rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (min-width: 769px) {
+  .service-item {
+    width: 50%;
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .service-item.page {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.service-body {
+  background-color: #fff;
+}
+
+.service-title {
+  padding: 2rem 2rem 1.5rem;
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+@media (min-width: 769px) {
+  .service-title {
+    font-size: 2rem;
+  }
+}
+
+.service-text {
+  padding: 0 2rem 2rem;
+  margin: 0;
+}
+
+.section-heading {
+  text-align: center;
+}
+
+.section-title {
+  display: inline-block;
+  padding-bottom: 1rem;
+  margin: 0 0 3rem;
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  border-bottom: 4px solid #ffd200;
+}
+
+@media (min-width: 769px) {
+  .section-title {
+    margin-bottom: 4rem;
+    font-size: 4rem;
+  }
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 112rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (min-width: 769px) {
+  .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+/*!-- ニュース --*/
+.news {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: #fff;
+}
+
+@media (min-width: 769px) {
+  .news {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}
+
+.news-list {
+  padding: 0 2rem;
+  margin: 0 auto 2rem;
+  list-style: none;
+}
+
+@media (min-width: 769px) {
+  .news-list {
+    max-width: 80rem;
+  }
+}
+
+.news-list li {
+  padding: 2rem 0;
+  margin-bottom: 0;
+  border-bottom: 1px #ccc solid;
+}
+
+.news-list li:first-child {
+  border-top: 1px #ccc solid;
+}
+
+.news-list-date {
+  display: block;
+  color: #999;
+}
+
+@media (min-width: 769px) {
+  .news-list-date {
+    display: inline-block;
+    margin-right: 4rem;
+  }
+}
+
+.news-footer {
+  text-align: center;
+}
+
+.button-news {
+  padding: 1.2rem 5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: .4rem;
+}
+
+@media (min-width: 769px) {
+  .button-news {
+    font-size: 1.6rem;
+  }
+}
+
+.sns {
+  padding: 4rem 0 2rem;
+  background-color: #f7f7f1;
+}
+
+@media (min-width: 769px) {
+  .sns {
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .sns .container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.sns-item {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 769px) {
+  .sns-item {
+    width: 34rem;
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .sns-item :first-child {
+    width: 100%;
+  }
+}
+
+/*!--フッター--*/
+.footer {
+  padding: 3rem 3rem 3rem;
+  font-size: 1.4rem;
+  background-color: #bebeb8;
+}
+
+.footer-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (min-width: 769px) {
+  .footer-body {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 3rem;
+  }
+}
+
+.footer-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 769px) {
+  .footer-info {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.footer-logo {
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 769px) {
+  .footer-logo {
+    margin-right: 2.4rem;
+    margin-bottom: 0;
+  }
+}
+
+.footer-address {
+  margin-bottom: 2rem;
+  font-style: normal;
+  text-align: center;
+}
+
+@media (min-width: 769px) {
+  .footer-address {
+    margin-bottom: 0;
+    text-align: left;
+  }
+}
+
+.footer-sns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0 0 2rem;
+  list-style: none;
+}
+
+@media (min-width: 769px) {
+  .footer-sns {
+    margin: 0;
+  }
+}
+
+.footer-sns li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  margin: 0;
+  font-size: 2.4rem;
+  background-color: #84847c;
+  border-radius: 50%;
+}
+
+.footer-sns li:first-child {
+  margin-right: 2rem;
+}
+
+.footer-sns a {
+  color: #fff;
+}
+
+.copyright {
+  text-align: center;
+  color: #000;
+}
+
+/*!-- Serviceページのカバー　--*/
+.page-cover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 10.6rem;
+  padding-top: 6rem;
+  color: #fff;
+  background-image: url("../images/cover.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 769px) {
+  .page-cover {
+    height: 13.3rem;
+  }
+}
+
+.page-cover-title {
+  margin: 0;
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+@media (min-width: 769px) {
+  .page-cover-title {
+    font-size: 5rem;
+  }
+}
+
+/*!-- サイドバナー --*/
+@media (min-width: 769px) {
+  .sidebar {
+    width: 30%;
+    padding-left: 9rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
+.side-banner {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.side-banner li {
+  margin-bottom: 2rem;
+}
+
+.side-banner li:last-child {
+  margin-bottom: 0;
+}
+
+/*!-- メイン --*/
+@media (min-width: 769px) {
+  .main {
+    width: 70%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

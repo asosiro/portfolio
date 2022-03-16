@@ -1,0 +1,54 @@
+//
+// ベースのスタイル
+//
+
+//変数
+$base: #ffffff; //白
+$sub1: #222222; //黒
+$sub2: #777777; //灰
+$accent1: #b19833; //鈍い金
+$accent2: #ebd47a; //明るい金
+
+
+
+//　ベーススタイル
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font: {
+        family: 'Noto Sans JP' , sans-serif;
+        size: 1.5rem;
+        weight: 400;
+    };
+    line-height: 1;
+    color: $sub1;
+    background-color: $base;
+    @media (min-width: 769px) {
+        font-size: 1.6rem;
+    }
+}
+
+a {
+    color: $accent1;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+//各セクションの見出し共通
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+    margin-bottom: 2rem;
+}
+
+p,
+h1 {
+    margin: 0;
+}
