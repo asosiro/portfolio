@@ -1,0 +1,127 @@
+/*!--ヘッダー--*/
+
+.header {
+    position:sticky;
+    background-color: $base;
+    top:0;
+    height: 15rem;
+    width: 100%;
+    max-width: 128rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    z-index:10;
+    border-bottom: 1px $sub1 solid;
+}
+
+.logo {
+    transition: all 1s;
+    display: flex;
+    align-items: center;
+    h1 {
+        color:$sub1;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    a {
+        margin-right: 1rem;
+    }
+    &:hover {
+        transform: rotateY(360deg);
+    }
+    @media#{$pc}{
+        h1{
+            font-size: 2.4rem;
+        }
+    }
+}
+
+.menu {
+    color: $sub2;
+    font-size: 4rem;
+    @media #{$pc} {
+        display: none
+    }
+}
+
+.sp-nav {
+    position: absolute;
+    top: 15rem;
+    left: 0;
+    display:none;
+    height: 100vh;
+    background-color: $base;
+    color: $sub2;
+    width: 100%;
+    padding: 0 2rem;
+    font-size: 2.4rem;
+}
+
+.sp-nav-box {
+    position:relative;
+    top:30%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 900;
+    .sp-nav-list {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+}
+
+.snsaccount {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    font-size: 4.8rem;
+    li {
+        padding:1.5rem;
+        border-radius: 5rem;
+    }
+    i {
+        transition: all 0.3s;
+        border-radius: 1rem;
+    }
+}
+
+.snsaccount i:hover {
+    @media#{$pc} {
+        color:$accent;
+        background-color: $sub1;
+    }
+}
+
+.sp-nav-list li:first-child {
+    margin-right: 2rem;
+}
+
+.pc-nav {
+    display: none;
+    .pc-nav-list {
+        display:flex;
+    }
+    a {
+        color:$sub1;
+        font-size: 2rem;
+        font-weight: 900;
+        transition: all 0.3s;
+    }
+    a:hover{
+        padding: 2rem;
+        color: $accent;
+        background-color: $sub1;
+    }
+    @media #{$pc} {
+        display: block;
+    }
+
+}
+
+.pc-nav-list li:first-child {
+    margin-right: 4rem;
+}
