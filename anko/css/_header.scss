@@ -1,0 +1,134 @@
+/*!--ヘッダー--*/
+
+
+.logo {
+    @media(max-width: 768px){
+        margin: 0 auto;
+    }
+}
+
+
+.nav-button {
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    @media(min-width:769px){
+        display:none;
+    }
+}
+
+.header {
+    width: 100%;
+    height: 5rem;
+    background-color: rgba(81, 55, 67, 0.7); //$sub1
+    display: flex;
+    padding: 2rem 2rem 1.5rem 2rem;
+    position: fixed;
+    top: 0;
+    align-items: center;
+    justify-content: space-between;
+    z-index:100;
+    @media(min-width:769px){
+        height:7rem;
+        padding: 2rem 14.3rem;
+    }    
+}
+
+.sp-nav {
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    display: none;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    padding: 0 2rem;
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(81, 55, 67, 0.9);
+    a{
+        background-color: $accent;
+        padding: 1rem;
+        border-radius: 5px;
+        margin-bottom: 3rem;
+    }
+    .sp-nav-list li{
+        display:block;
+        margin-bottom : 5rem;
+        &:first-child {
+            margin-top: 20rem;
+        }
+        &:last-child {
+            margin-bottom: 11rem;
+        }
+    }
+}
+
+.pc-nav {
+    display: none;
+    @media(min-width: 769px) {
+        display:block;
+    }
+    ul {
+        display:flex;
+    }
+    li {
+        padding: 2rem;
+    }
+    a {
+        color:$accent;
+        font-weight:bold;
+        padding: 1rem;
+        position: relative;
+    }
+    a::after {
+        position: absolute;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: $base;
+        bottom: 0; /*アンダーラインが現れ始める位置（aタグの下辺からの高さ）*/
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s;
+        }
+        
+        a:hover::after {
+        visibility: visible;
+        bottom: 12px; /*アニメーションが止まる位置*/
+        opacity: 1;
+        }
+}
+
+.share-body{
+    display: inline-grid;
+    color: $sub2;
+    .share-twitter {
+        border-radius: 5px;
+        background-color: $accent;
+        padding: 1rem;
+        margin-bottom: 3rem;
+    }
+    .share-button {
+        padding: 1rem 5rem;
+        color: $accent;
+        border-radius: 3rem;
+        background-color: $sub2;
+        margin: 0 auto;
+        width: fit-content;
+        border: 1px $accent solid;
+        @media(min-width:769px) {
+            &:hover {
+                background-color: purple;
+                color:$accent;
+                border-radius: 3rem;
+                transition: 0.5s;
+            }    
+        }
+    }
+
+}
+

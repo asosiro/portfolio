@@ -1,0 +1,187 @@
+/*!--ベース--*/
+
+//変数
+$base: #E9DFE5; //さくら鼠
+$sub1: #513743; //似せ紫
+$sub2: #9c4343; //あずき色
+$accent: #FFF; //白
+
+
+//　ベーススタイル
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 100%;
+    font-weight: normal;
+  }
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font: {
+        family: 'Yu Gothic' , sans-serif;
+        size: 1.5rem;
+        weight: 400;
+    };
+    line-height: 1;
+    color: $accent;
+    background-image: url(../image/azuki.png);
+    background-repeat: repeat;
+    background-color: $base;
+    @media (min-width: 769px) {
+        font-size: 2.2rem;
+    }
+}
+
+a {
+    color: $sub2;
+    text-decoration: none;
+}
+
+img {
+    width: 100%; //max-widthから変更
+    height: auto;
+    vertical-align: bottom;
+}
+
+  
+  li {
+    list-style-type: none;
+  }
+
+  //各セクション見出し
+.head-cover {
+max-width: 136.6rem;
+margin: 0 auto;
+}
+.head-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+  .section-heading {
+    background-color: $accent;
+    color: $sub2;
+    padding: 0.5rem;
+    display: inline-block;
+    margin-bottom: 2.2rem ;
+    border-radius: 1rem;
+    .section-title {
+        font-size: 2.8rem;
+        font-weight: bold;
+        @media(min-width:769px){
+          font-size: 3.2rem;
+      }    
+    }
+}
+
+//See More
+.seemore {
+  font-size:1.4rem;
+  border-radius: 1rem;
+  font-weight: bold;
+  @media(min-width:769px){
+    font-size: 1.8rem;
+    &:hover{
+      box-shadow: 0px 6px 5.16px 0.84px rgba(55, 55, 55, 0.41);
+      transition: 0.5s;;
+    }
+  }    
+}
+
+#sub-page {
+  padding: 9rem 4rem 3rem;
+  @media(min-width: 769px){
+      padding:9rem 14.3rem 5rem;
+      display: flex;
+  }
+}
+
+.sub-container {
+  @media(min-width: 769px){
+    width: 65%;
+    margin-right:9rem;
+  }
+}
+
+.sidebar-cover {
+  @media(min-width: 769px){
+    width: 35%;
+  }
+  .sidebar {
+    @media(min-width:769px){
+      background-color: $sub1;
+      position: sticky;
+      top: 7rem;
+    }
+  }
+  .section-heading {
+    @media(min-width:769px){
+      margin-bottom: 5rem;
+    }
+
+  }
+}
+
+
+//Cover
+.cover {
+  height: 18rem;
+  text-align: center;
+  padding-top: 8rem;
+  position: relative;
+  @media(min-width:769px){
+    height:30rem;
+    padding-top: 14rem;
+  }
+  &#confeccov{
+    background: {
+      image: url("../image/confec/cover2.jpg");
+      size: cover;
+      position: center;
+      }
+  }
+    &#placecov{
+      background: {
+        image: url("../image/place/cover3.jpg");
+        size: cover;
+        position: center;
+      }
+  }
+}
+
+.cover-text {
+  font-size: 3.2rem;
+  font-weight: bold;
+  @media(min-width:769px) {
+    font-size: 4rem;
+  }
+}
+
+.fade_in {
+  opacity: 0;
+  transform: translateY(5rem);
+  transition: 1s;
+}
+.fade_in.show{
+  opacity:1;
+  transform:none;
+}

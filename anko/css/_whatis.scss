@@ -1,0 +1,56 @@
+/*!--Whatisセクション--*/
+
+.whatis {
+    padding: 2rem 2rem 3rem;
+    @media(min-width: 769px){
+        padding:5rem 14.3rem 5rem;
+    }
+}
+
+.whatis-body{
+    background-color: $sub1;
+    padding: 1.5rem;
+    max-width: 90rem;
+    margin: auto;
+    @media(min-width:769px){
+        padding: 2.5rem;
+    }
+    .whatis-text{
+        padding: 0.5rem;
+        font-size: 1.4rem;
+        line-height: 1.5;
+        @media(min-width:769px){
+            font-size: 1.8rem;
+        }    
+    }
+    .last-text{
+        font-size:1.6rem;
+        text-align: center;
+        margin:3.2rem auto;
+        @media(min-width:769px){
+            font-size: 2.2rem;
+        }    
+    }
+}
+
+.whatis-body {
+    @media(min-width:769px){
+        display: flex;
+    }
+    .slick-dots{
+        bottom: -3rem;
+    }
+}
+
+#whatis-carousel {
+    @media(min-width:769px) {
+        width: calc((100% - 50px) / 2);
+        margin-right: 5rem;
+    }
+}
+
+.description {
+    @media(min-width:769px) {
+        width: calc((100% - 50px) / 2);
+    }
+}

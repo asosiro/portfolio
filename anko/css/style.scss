@@ -1,0 +1,23 @@
+@charset 'UTF-8'; /* 文字コードの指定 */
+
+// Google Fontsの読み込み
+
+// Scssファイルの読み込み
+@import "base"; //ベース
+
+@import "header"; //ヘッダー
+
+@import "carousel"; //カルーセル
+
+@import "whatis"; //Whatis
+
+@import "confection"; //confection
+
+@import "places"; //places
+
+@import "more"; //more
+
+@import "share"; //share
+
+@import "footer"; //share
+

@@ -1,0 +1,62 @@
+/*!--カルーセル--*/
+
+.carousel_cover {
+    width: 100%;
+    position: relative;
+    background-color: $accent;
+    a {
+        width: 100%
+    }
+}
+
+ul.slick-dots{
+    position: absolute;
+    bottom: 3rem;
+    & li button:before{
+        color:$base;
+        opacity: 1;
+    }
+    & li.slick-active button:before{
+        color: $sub2;
+        opacity: 1;
+    }
+}
+
+.catch {
+    position: absolute;
+    width: 100%;
+    top: 15%;
+    padding: 0 2rem;
+    color: $accent;
+    display: flex;
+    justify-content: center;
+    @media(min-width:769px){
+        width:50%;
+        top:35%;
+    }
+    .catch-copy {
+        display:flex;
+        flex-direction: column;
+        white-space: nowrap;
+        line-height: 1.5;
+        font: {
+            weight: bold;
+            size: 4rem;
+        } 
+        .catch-bottom {
+            text-align: right;
+        }
+        @media(min-width:769px){
+            font-size: 5rem;
+            line-height: 1.7;
+        }    
+    }
+    .sub-catch {
+        text-align: center;
+        font-size: 2.1rem;
+        @media(min-width:769px){
+            font-size: 2.4rem;
+            line-height:3;
+        }    
+    }
+}

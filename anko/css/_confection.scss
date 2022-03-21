@@ -1,0 +1,91 @@
+.confection {
+    padding: 2rem 2rem 3rem;
+    @media(min-width: 769px){
+        padding:9rem 14.3rem 5rem;
+    }
+}
+.confection-box {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 108rem;
+    margin: 0 auto;
+}
+
+
+.sub-box {
+    @media(min-width: 950px){
+        align-items: flex-start;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.confection-body{
+    width:calc((100% - 25px) / 2); 
+    background-color: $sub1;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0px 6px 5.16px 0.84px rgba(55, 55, 55, 0.41);
+    &:nth-child(2n-1){
+        margin-right:2rem;
+    }
+    &:nth-child(n+5){
+        margin-bottom:0;
+    }
+
+    @media (min-width:769px){
+        width:calc((100% - 60px) / 3); 
+        margin-right: 2rem;
+        &:nth-child(3n){
+            margin-right:0;
+        }
+        &:nth-child(n+4){
+            margin-bottom:0;
+        }
+        .confection-name {
+            font-size: 2rem;
+        }
+    }
+}
+
+.confection-name{
+    text-align: center;
+    font: {
+        size:1.6rem;
+        weight:bold;
+    }
+    p:first-child {
+        margin: 1rem auto;
+    }
+    @media(min-width: 769px){
+        font-size: 1.8rem;
+    }
+}
+
+
+.pconfec-body {
+    max-width: 50rem;
+    margin: 0 auto 5rem;
+    font-size:1.6rem;
+    background-color: $sub1;
+    margin-bottom: 2rem;
+    box-shadow: 0px 6px 5.16px 0.84px rgba(55, 55, 55, 0.41);
+    &:nth-child(n+5) { // .confection-bodyキャンセル
+        margin-bottom: 5rem;
+    }
+
+    .confec-text{
+        padding: 2rem 2rem;
+        line-height: 1.7;
+    }
+
+    @media(min-width:950px){
+        width:calc((100% - 60px) / 2);
+        &:nth-child(odd){
+            margin: 0 4rem 5rem 2rem;
+        }
+        &:nth-child(even){
+            margin-top: 23rem;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.share {
+    padding: 2rem;
+    color: $sub2;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    font: {
+        size:2.8rem;
+        weight: bold;
+    }
+    @media(min-width: 769px){
+        padding:15rem 14.3rem 5rem;
+    }
+}
+
+#page-share {
+    padding: 10rem 2rem 1rem;
+    @media(min-width:769px) {
+        padding: 2rem;
+        margin-top:10rem;
+    }
+}
+
+.twitter {
+    margin: auto;
+    max-width: 40rem;
+}
