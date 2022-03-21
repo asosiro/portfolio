@@ -1,0 +1,94 @@
+/*!--スキル--*/
+
+.skill {
+    height: 768px;
+    position: relative;
+    @media#{$tab} {
+        height: initial;
+    }
+}
+
+.skillbox {
+    max-width: 35rem;
+    @media#{$tab} {
+        margin: 0 auto 2rem;
+    }
+        &:nth-child(2){
+        display: flex;
+        flex-direction: row-reverse;
+        position: absolute;
+        top:10%;
+        left:0;
+        @media#{$tab} {
+            position: initial;
+            margin-top: 2rem;
+        }
+    }
+        &:last-child{
+        display: flex;
+        position: absolute;
+        top:10%;
+        right:0;
+        @media#{$tab} {
+            position: initial;
+            flex-direction: row-reverse;
+        }
+    }
+    &:nth-child(3) {
+        position: absolute;
+        top: 50%;
+        left: 15%;
+        .skitil{
+            text-align: end;
+        }
+        @media#{$tab} {
+            position: initial;
+            display: flex;
+            flex-direction: row-reverse;
+            .skitil{
+                text-align: initial;
+            }
+        }
+    }
+    &:nth-child(4) {
+        position: absolute;
+        top: 50%;
+        right: 15%;
+        @media#{$tab} {
+            position: initial;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+    }
+}
+
+.skitil {
+    font-size: 3.2rem;
+    i {
+        background-color: #3B3B3B;
+        font-size: 10rem;
+        padding: 2.5rem;
+        min-width: 13rem;
+        text-align: center;
+
+    }
+    @media#{$tab} {
+        font-size: 2.2rem;
+        width: calc((100% - 10px) * .4);
+        i{
+            font-size: 8.5rem;
+        }
+    }
+}
+
+
+.text_box{
+    width: 100%;
+    background-color: $sub;
+    padding: 1rem;
+    align-self: flex-end;
+    @media#{$tab} {
+        width: calc((100% - 10px) * .6);
+    }
+}
+

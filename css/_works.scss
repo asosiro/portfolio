@@ -1,0 +1,137 @@
+/*!--ワークボックス--*/
+
+.works {
+    height:768px;
+    z-index: 1;
+    position: relative;
+    background-color: $base;
+    margin-bottom: 5rem;
+    @media#{$sp} {
+        height:initial;
+    }
+}
+
+.work_con {
+    position: absolute;
+    &:nth-child(2){
+        bottom: 0;
+        left: 12.5%;
+    }
+    &:nth-child(3){
+        top: 20%;
+        left: 36.5%;
+    }
+    &:nth-child(4){
+        bottom: 0;
+        right: 12.5%;
+    }    
+    &:nth-child(5){
+        top: 0;
+        right: 0;
+    }
+    &:nth-child(6){
+        top: 0;
+        left: 0;
+    }
+    @media#{$sp} {
+        all: initial;
+    }
+}
+
+div[class^="overlay"] {
+        display: none; 
+        position: relative;
+        .window {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(122, 122, 122, 0.9);
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform: initial;
+        z-index: 3;
+        }
+        .close {
+            cursor:pointer;
+            position: absolute;
+            color:$accent;
+            top: 2rem;
+            right: 2rem;
+            font-size: 3rem;
+            font-weight: 900;
+        }
+    .pop-up-img{
+        max-width:100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 3;
+    }
+}
+
+    div[class$="active"]{
+        display:block; 
+    }
+
+    div[class^="banbox"]{
+        cursor: pointer;
+}
+
+.work_box {
+     position: relative;
+    transition:  all 0.3s;
+    .work_img {
+        width: 325px;
+        height: 325px;
+        border-radius: 50%;
+        box-shadow: 3px 3px 10px $accent;
+    }
+    .work_box img{
+        width: 325px;
+        height: 325px;
+        border-radius: 50%;
+        display: inline;
+        max-width: 272px;
+    }
+    @media (min-width:769px){
+    &:hover {
+        transform: scale(1.1);
+        }
+    }
+    @media#{$sp} {
+        max-width: 272px;
+        height: 272px;
+        margin: 0 auto 2rem;
+        &:first-child {
+            margin-top: 2rem;
+        }
+        .work_img {
+            max-width: 272px;
+            height: 272px;
+            border-radius: 50%;
+            box-shadow: 3px 3px 10px $accent;
+        }
+    }
+}
+
+.work_text{
+    background-color: $sub;
+    position:absolute;
+    top:50%;
+    height: calc(325px / 2);
+    width: 325px;
+    border-radius: 0 0 50% 50% / 0 0 100% 100%;
+    padding: 3rem 4rem 0;
+    color:$accent;
+    z-index: -1;
+    h3 {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    @media#{$sp} {
+        max-width: 272px;
+        height: calc(272px / 2);    
+        font-size: 1.2rem;
+    }
+}

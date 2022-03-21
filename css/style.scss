@@ -1,0 +1,15 @@
+@charset 'UTF-8'; /* 文字コードの指定 */
+
+// Google Fontsの読み込み
+
+// Scssファイルの読み込み
+@import "base"; //ベース
+
+@import "top"; //トップ
+
+@import "profile"; //プロフィール
+
+@import "works"; //制作物
+
+@import "skills"; //スキル
+

@@ -1,0 +1,132 @@
+/*!--ベース--*/
+
+//変数
+$base: #B98F45; //黄土色
+$sub: #EC9700; //オレンジ
+$accent: #FFF; //白
+
+$sp: "(max-width: 769px)";
+$tab: "(max-width: 1000px)";
+
+@mixin sec_tit {
+  margin: 0 auto;
+  color:$sub;
+  background-color: $accent;
+  padding:  6.4rem 0;
+  text-align: center;
+  font-size: 6.4rem;
+  max-width: 51.8rem;
+  border-radius: 0 0 50% 50% /0 0 100% 100%;
+  position:relative;
+  top: 0;
+  // z-index: 1;
+  @media#{$sp} {
+    font-size: 3.2rem;
+    max-width: 18.4rem;
+    padding:  3rem 0;
+  }
+}
+
+
+//　ベーススタイル
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 100%;
+    font-weight: bold;
+  }
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font: {
+        family: 'Bodoni MT', 'Noto Sans JP', sans-serif;
+        size: 1.2rem;
+        weight: 400;
+    };
+    color: $accent;
+    background-color: $base;
+    @media (min-width: 769px) {
+        font-size: 1.6rem;
+    }
+}
+
+a {
+    color: $sub;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+  
+li {
+  list-style-type: none;
+}
+
+main{
+  max-width: 128rem;
+  margin: 0 auto;
+}
+
+.section_title{
+  @include sec_tit;
+  h2 {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+}
+
+footer{
+  height:10rem;
+  text-align: center;
+  background-color: $sub;
+  padding-top: 4rem;
+  @media#{$sp} {
+    height: 5rem;
+    padding-top: 2rem;
+  }
+}
+
+
+.fade_in {
+  opacity: 0;
+  transform: translateY(-5rem);
+  transition: 2s;
+}
+
+.fade_in2 {
+  opacity: 0;
+  transform: translateX(-5rem);
+  transition: 2s;
+}
+
+.fade_in.show{
+  opacity:1;
+  transform:none;
+}
+
+.fade_in2.show{
+  opacity:1;
+  transform:none;
+}
